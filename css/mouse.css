@@ -1,0 +1,12 @@
+#cursorId {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 73, 73);
+  box-sizing: border-box;
+  transition: 0.1s linear;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}

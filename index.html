@@ -1,0 +1,490 @@
+<!-- Kevin Keen 20720531 -->
+<!-- Ha Won Kim 20693593 -->
+<!-- Justin Park 20729557 -->
+
+<!-- 
+  This is our website explaining the in's and out's
+  of the long-beloved game: A Dark Room. 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/website.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/landingpage.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/mouse.css" />
+    <link rel="stylesheet" href="css/flexboxgrid.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor" id="cursorId"></div>
+
+    <div class="topbar">
+      <div class="nav-content">
+        <h1 class="logo-text">
+          <a href="#">A Dark Room</a>
+        </h1>
+        <div class="button_container" id="toggle">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay">
+          <nav class="overlay-menu">
+            <div class="menu_left">
+              <ul>
+                <li><h4>The Creators</h4></li>
+                <li><a href="#">Developer - Kevin Keen</a></li>
+                <li><a href="#">Designer - Ha Won Kim</a></li>
+                <li><a href="#">Researcher - Justin Park</a></li>
+              </ul>
+            </div>
+            <ul>
+              <li>
+                <a href="#what-dark" class="clicked-to-nav"
+                  >What is Dark Room</a
+                >
+              </li>
+              <li><a href="#howto" class="clicked-to-nav">How to</a></li>
+              <li><a href="#gameplay" class="clicked-to-nav">Gameplay</a></li>
+              <li><a href="#about" class="clicked-to-nav">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <header class="v-header container-header">
+      <div class="fullscreen-video-wrap">
+        <video src="assets/Slow-Fire.mp4" controls autoplay loop muted></video>
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header-content">
+        <h1>A <span class="border-title">Dark</span> Room</h1>
+        <p>
+          Is a role-playing text-based game for the web, iOS and Android. Learn
+          about the game and how to play it here
+        </p>
+      </div>
+      <div class="scroll-alert">
+        <p>scroll down</p>
+      </div>
+      <div class="scroll-indicator">
+        <div class="dots"></div>
+      </div>
+    </header>
+
+    <div class="wrap-content">
+      <div class="row center-md">
+        <div class="col-md-4">
+          <img src="assets/reviews/app_store_logo.png" class="logo" />
+          <h5 class="icon_text">
+            <strong>Most downloaded</strong> IOS game during the month of April
+          </h5>
+        </div>
+        <div class="col-md-4 center-md">
+          <img src="assets/reviews/newYork_logo.png" style="width: 33%;" />
+          <h5 class="icon_text">
+            At the end of 2013, the game was listed in a number of
+            <strong>Best of the Year lists</strong>
+          </h5>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/reviews/touchA_logo.png" class="logo" />
+          <h5 class="icon_text">
+            TouchArcade gave the game a rating of <strong>4 out of 5</strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-color" id="what-dark">
+      <div class="wrap-content">
+        <div class="row middle-md">
+          <div class="col-md-6">
+            <h3>What is Dark Room?</h3>
+            <p>
+              The game offers just enough gameplay to hook you, and ample story
+              to send the player’s imagination running wild. Players assume the
+              role of a character that has woken up in a dark room with no
+              memory of what’s happened prior. The only option is to stoke the
+              fire and wait. After a few taps of the ‘Stoke Fire’ button, a
+              shadowy figure stumbles into your room. It turns out the figure is
+              a builder. Once they’re nursed back to health, they help you
+              expand from a single room to a modest village and more.
+            </p>
+            <a
+              class="link"
+              href="http://adarkroom.doublespeakgames.com/"
+              target="_blank"
+              >Play the game</a
+            >
+          </div>
+          <div class="col-md-6 center-md">
+            <img src="assets/what_is/dark_fight.jpg" class="img-responsive" />
+            <p class="caption">
+              Near the end-game the player is exploring more unknown terrain
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="howto" class="carousel carousel-progress">
+      <div
+        id="carousel-container"
+        class="transition-whoosh clearfix"
+        style="width: 2461px;transform: translateX(0px);"
+      >
+        <div class="carousel-item">
+          <div class="carousel-thumbnail">
+            <img class="img-responsive" src="assets/how-to/first.png" />
+          </div>
+          <div class="carousel-caption">
+            <h5 class="carousel-caption-title">First Fires</h5>
+            <div class="carousel-caption-description">
+              You can quickly turn the Dark Room into a lit one by lighting and
+              stoking the fire. Keep doing this until a stranger staggers into
+              the room. Persist until she's warmed. Eventually you'll unlock a
+              new area: a Silent Forest. You're just getting started.
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-thumbnail">
+            <img
+              alt="Closed Beta"
+              class="img-responsive"
+              src="assets/how-to/second.png"
+            />
+          </div>
+          <div class="carousel-caption">
+            <h5 class="carousel-caption-title">The Village</h5>
+            <div class="carousel-caption-description">
+              Time to build a village, keep collecting wood and building traps,
+              so you can obtain wood, fur, meat, and bone, these are used to
+              build huts.
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-thumbnail">
+            <img class="img-responsive" src="assets/how-to/three.png" />
+          </div>
+          <div class="carousel-caption">
+            <h5 class="carousel-caption-title">The Adventure Begins</h5>
+            <div class="carousel-caption-description">
+              The Compass unlocks a Dusty Path, which encompasses the rest of
+              the world outside your tiny village. It's out here that you'll
+              fight enemies, scavenge for items, and discover just how messed up
+              things have become.
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-thumbnail">
+            <img class="img-responsive" src="assets/how-to/four.png" />
+          </div>
+          <div class="carousel-caption">
+            <h5 class="carousel-caption-title">Conquer The Wastelands</h5>
+            <div class="carousel-caption-description">
+              With better items, you can now move beyond the meagre borders of
+              the village and search new areas in a Dusty Path. You're strong
+              enough now to leave the trees and explore the wastelands. But be
+              careful, and watch for spaceships?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="left" class="carousel-left"></div>
+      <div id="right" class="carousel-right"></div>
+    </div>
+
+    <div class="wrap-content">
+      <div class="row center-md">
+        <h3>After the First 15 mins</h3>
+        <p class="gameplay-text">
+          As you progress further into the game, you will unlock the "Dusty
+          Path". This will allow for your village to explore the surroundings.
+          You will fight enemies, animals, and find hidden treasures. However
+          you will need to craft items to aid your adventure.
+        </p>
+      </div>
+    </div>
+
+    <div class="wrap-content later-game">
+      <div class="row center-md">
+        <div class="col-md-3">
+          <div class="button-after">
+            Armour
+          </div>
+          <p>
+            You can craft various levels of armour. Armour reduces your enemies
+            damage.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div class="button-after">
+            Water
+          </div>
+          <p>Water allows you to explore longer, and farther.</p>
+        </div>
+        <div class="col-md-3">
+          <div class="button-after">Cured Meat</div>
+          <p>Heals you from damage taken from enemies.</p>
+        </div>
+        <div class="col-md-3">
+          <div class="button-after-last">Embark</div>
+          <p>
+            After you have saddled the necessary equipment, you are ready to
+            embark on your first adventure.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap-content">
+      <div class="row center-md">
+        <h3>Play with our prototype</h3>
+        <p class="gameplay-text">
+          Our prototype is a barbones, compared to the real game. However, we
+          have coded the main functions of the game. Play around with the
+          animations, and experience...the Dark Room.
+        </p>
+      </div>
+    </div>
+
+    <div id="gameplay" class="wrapper">
+      <div id="notifications" classname="notifications">
+        <div id="notifyGradient"></div>
+        <div id="notification1" class="notification" style="opacity: 1;">
+          stoke the fire, the room is cold.
+        </div>
+      </div>
+      <div id="content">
+        <div id="main">
+          <div id="header">
+            <div id="location_room" class="headerButton selected">
+              A Firelit Room
+            </div>
+            <div id="location_outside" class="headerButton">
+              A Modest Village
+            </div>
+          </div>
+          <div id="storesContainer" style="top: 40px; right:0;">
+            <div id="stores" data-legend="stores" style="opacity: 1;">
+              <div id="resources" style="opacity: 1;">
+                <div id="row_wood" class="storeRow">
+                  <div class="row_key">wood</div>
+                  <div class="row_val">5</div>
+                  <div class="clear"></div>
+                </div>
+                <div id="row_fur" class="storeRow">
+                  <div class="row_key">fur</div>
+                  <div class="row_val">0</div>
+                  <div class="clear"></div>
+                </div>
+                <div id="row_meat" class="storeRow">
+                  <div class="row_key">meat</div>
+                  <div class="row_val">0</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="locationSlider">
+            <div id="roomPanel" class="location">
+              <div
+                id="stokeButton"
+                class="button"
+                onclick="move();"
+                style="width: 80px;"
+              >
+                stoke fire
+                <div id="cooldown"></div>
+                <div class="tooltip bottom right">
+                  <div class="row_key">wood</div>
+                  <div class="row_val">1</div>
+                </div>
+              </div>
+              <div id="buildBtns" data-legend="build:" style="opacity: 1;">
+                <div
+                  id="build_trap"
+                  class="button"
+                  buildthing="trap"
+                  style="width: 80px; opacity: 1;"
+                >
+                  trap
+                  <div id="cooldown"></div>
+                  <div class="tooltip bottom right">
+                    <div class="row_key">wood</div>
+                    <div id="row_val">10</div>
+                  </div>
+                </div>
+                <div
+                  id="build_cart"
+                  class="button"
+                  buildthing="cart"
+                  style="width: 80px; opacity: 1;"
+                >
+                  cart
+                  <div id="cooldown"></div>
+                  <div class="tooltip bottom right">
+                    <div class="row_key">wood</div>
+                    <div id="row_val">20</div>
+                  </div>
+                </div>
+                <div
+                  id="build_hut"
+                  class="button"
+                  buildthing="hut"
+                  style="width: 80px; opacity: 1;"
+                >
+                  hut
+                  <div id="cooldown"></div>
+                  <div class="tooltip bottom right">
+                    <div class="row_key">wood</div>
+                    <div id="row_val">200</div>
+                  </div>
+                </div>
+                <div
+                  id="build_lodge"
+                  class="button"
+                  buildthing="lodge"
+                  style="width: 80px; opacity: 1;"
+                >
+                  lodge
+                  <div id="cooldown"></div>
+                  <div class="tooltip bottom right">
+                    <div class="row_key">wood</div>
+                    <div id="row_val">200</div>
+                    <div class="row_key">fur</div>
+                    <div id="row_val_1">10</div>
+                    <div class="row_key">meat</div>
+                    <div id="row_val_2">5</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="outsidePanel" class="location">
+              <div key="gatherer" id="workers_row_gatherer" class="workerRow">
+                <div id="workers" style="opacity: 1;">
+                  <div class="row_key">gatherer</div>
+                  <div class="row_val"><span>40</span></div>
+                  <div class="clear"></div>
+                  <div class="tooltip bottom right">
+                    <div class="storeRow">
+                      <div class="row_key">wood</div>
+                      <div class="row_val">+40 per 10s</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="gatherButton"
+                onclick="moveGather();"
+                class="button"
+                style="width: 80px;"
+              >
+                gather wood
+                <div id="cooldown1"></div>
+              </div>
+
+              <div
+                id="trapsButton"
+                onclick="moveTraps()"
+                class="button"
+                style="width: 80px;"
+              >
+                check traps
+                <div id="cooldown2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-info">
+      <div id="about" class="wrap-content">
+        <div class="row middle-md">
+          <div class="col-md-6 center-md">
+            <img src="assets/michael_image.png" class="michael" />
+            <p class="caption">
+              This is the developer of A Dark Room, Michael Townsend
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>The Origin Story</h3>
+            <p>
+              A Dark Room was created by Michael Townsend, the founder and lead
+              developer of Doublespeak Games. It was released as a browser game
+              on June 10, 2013. According to Townsend, the game was designed to
+              tell its story entirely through environmental cues, rather than
+              relying on exposition and dialogue. In July 2013, Townsend
+              released the source code of the game on GitHub under the open
+              source license MPL 2.0. Soon, Townsend was contacted by developer
+              Amir Rajan, who asked for permission to adapt the game for iOS.
+              Amir ported the game to iOS using the RubyMotion mobile toolchain,
+              and released it on the App Store in late 2013. An Android port of
+              A Dark Room was released in 2016. A Nintendo Switch version of the
+              game was released on April 12, 2019.
+            </p>
+            <a
+              class="link"
+              href="http://www.doublespeakgames.com/"
+              target="_blank"
+              >Doublespeak games</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="footer-back">
+      <div class="wrap-content">
+        <hr />
+        <div class="row">
+          <div class="col-md-8">
+            <h4>An interactive site for learning about A Dark Room</h4>
+            <ul class="menu-footer">
+              <li><a href="#what-dark">What is Dark Room</a></li>
+              <li><a href="#howto">How to</a></li>
+              <li><a href="#gameplay">Gameplay</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+            <p class="follow">
+              <strong>Follow the creators</strong>
+              <a href="#">Kevin Keen</a>
+              <a href="#">Ha Won Kim</a>
+              <a href="#">Justin Park</a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="footer-game transition-whoosh">
+              <a href="http://adarkroom.doublespeakgames.com/" target="_blank">
+                Play the game <i class="right-arrow"></i>
+              </a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/increment.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/mouse.js"></script>
+  </body>
+</html>
